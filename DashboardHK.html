@@ -1,0 +1,126 @@
+<div style="background-color:#094AB2;font-family: 'Segoe UI';font-size: 18px;color:white" ng-repeat="m in todos | limitTo:-1">
+<p style="padding:3px">Overall Statistics - Daily Checks Date ({{m.date | date:'dd/MM/yy'}})</p>
+</div>
+
+<table class = "table">
+<tbody>
+<tr ng-repeat="m in todos | limitTo:-1">
+<td style="width:30%">
+<strong>Overall Status<strong>
+</td>
+<td style="width:70%;text-align:center">
+<div style="border-radius: 25px;" ng-class="{'red':m.overall=='Red','green':m.overall=='Green','amber':m.overall=='Amber'}">{{m.overall}}</div>
+</td>
+</tr>
+<tbody>
+</table>
+
+<table id='table' class = "table table-bordered" ng-app="App" ng-controller="DashboardHKController">
+
+<thead>
+<tr>
+<th>#</th>
+<th>Category</th>
+<th>Status</th>
+<th>Comments</th>
+</tr>  
+</thead>
+<tbody>
+
+<tr>
+<td colspan="4">
+<div style="background-color:#f3fafe">
+<strong>Toranto dashboard<strong>
+</div>
+</td>
+</tr>
+<tr ng-repeat="m in todos | limitTo:-1">
+<td rowspan="2" style="vertical-align: middle;width:30%">Lorem Ipsum dummy text</td>
+<td style="width:30%">Lorem Ipsum</td>
+<td style="width:20%;text-align: center">
+<div style="border-radius: 25px;" ng-class="{'red':m.UAO1=='Red','green':m.UAO1=='Green','amber':m.UAO1=='Amber'}">{{m.UAO1}}</div>
+</td>
+<td style="width:20%">{{m.txt1}}</td>
+</tr>	  
+
+<tr ng-repeat="m in todos | limitTo:-1">        
+<td>Lorem Ipsum</td>
+<td style="text-align: center">
+<div style="border-radius: 25px;" ng-class="{'red':m.UAO2=='Red','green':m.UAO2=='Green','amber':m.UAO2=='Amber'}">{{m.UAO2}}</div>
+</td>
+<td>{{m.txt2}}</td>
+</tr>
+<tr>
+<td colspan="4">
+<div style="background-color:#f3fafe">
+<strong>Toranto dashboard<strong>
+</div>
+</td>
+</tr>
+<tr ng-repeat="m in todos | limitTo:-1">
+<td rowspan="2" style="vertical-align: middle">Lorem Ipsum dummy text</td>
+<td >Lorem Ipsum Lorem Ipsum Lorem Ipsum dddddd</td>
+<td style="text-align: center">
+<div style="border-radius: 25px;" ng-class="{'red':m.UAO3=='Red','green':m.UAO3=='Green','amber':m.UAO3=='Amber'}">{{m.UAO3}}</div>
+</td>
+<td>{{m.txt3}}</td>
+</tr>	  
+
+<tr ng-repeat="m in todos | limitTo:-1">        
+<td >Lorem Ipsum</td>
+<td style="text-align: center">
+<div style="border-radius: 25px;" ng-class="{'red':m.UAO4=='Red','green':m.UAO4=='Green','amber':m.UAO4=='Amber'}">{{m.UAO4}}</div>
+</td>
+<td>{{m.txt4}}</td>
+</tr>
+<tr>
+<td colspan="4">
+<div style="background-color:#f3fafe">
+<strong>Toranto dashboard<strong>
+</div>
+</td>
+</tr>
+<tr ng-repeat="m in todos | limitTo:-1">
+<td rowspan="2" style="vertical-align: middle;width:30%">Lorem Ipsum dummy text</td>
+<td style="width:30%">Lorem Ipsum</td>
+<td style="width:20%;text-align: center">
+<div style="border-radius: 25px;" ng-class="{'red':m.UAO1=='Red','green':m.UAO1=='Green','amber':m.UAO1=='Amber'}">{{m.UAO1}}</div>
+</td>
+<td style="width:20%">{{m.txt1}}</td>
+</tr>	  
+
+<tr ng-repeat="m in todos | limitTo:-1">        
+<td>Lorem Ipsum</td>
+<td style="text-align: center">
+<div style="border-radius: 25px;" ng-class="{'red':m.UAO2=='Red','green':m.UAO2=='Green','amber':m.UAO2=='Amber'}">{{m.UAO2}}</div>
+</td>
+<td>{{m.txt2}}</td>
+</tr>
+
+<tr>
+<td colspan="4">
+<div style="background-color:#f3fafe">
+<strong>Toranto dashboard<strong>
+</div>
+</td>
+</tr>
+<tr ng-repeat="m in todos | limitTo:-1">
+<td rowspan="2" style="vertical-align: middle;width:30%">Lorem Ipsum dummy text</td>
+<td style="width:30%">Lorem Ipsum</td>
+<td style="width:20%;text-align: center">
+<div style="border-radius: 25px;" ng-class="{'red':m.UAO1=='Red','green':m.UAO1=='Green','amber':m.UAO1=='Amber'}">{{m.UAO1}}</div>
+</td>
+<td style="width:20%">{{m.txt1}}</td>
+</tr>	  
+
+<tr ng-repeat="m in todos | limitTo:-1">        
+<td>Lorem Ipsum</td>
+<td style="text-align: center">
+<div style="border-radius: 25px;" ng-class="{'red':m.UAO2=='Red','green':m.UAO2=='Green','amber':m.UAO2=='Amber'}">{{m.UAO2}}</div>
+</td>
+<td>{{m.txt2}}</td>
+</tr>
+</tbody>
+
+</table>
+<button type="button" class="btn btn-primary btn-lg" onclick="he()">Save</button>
